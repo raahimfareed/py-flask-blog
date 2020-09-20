@@ -1,0 +1,21 @@
+body {
+  background-image: url("../images/main-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body:before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  backdrop-filter: brightness(30%);
+  -webkit-backdrop-filter: brightness(30%);
+}
+
+@import 'signup';
